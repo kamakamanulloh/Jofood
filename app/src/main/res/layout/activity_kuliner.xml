@@ -1,0 +1,528 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="30dp"
+
+    android:layout_height="match_parent">
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout"
+            android:layout_below="@+id/layout1"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/layout2"
+
+                android:weightSum="4"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/joofood"
+                        android:layout_marginTop="15dp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv"></android.support.v7.widget.RecyclerView>
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/all"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="12dp"-->
+                <!--android:text="Semua"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/peta"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="12dp"-->
+                <!--android:text="Terdekat"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/ic_star"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:text="Terlaris"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/kakilima"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="12dp"-->
+                <!--android:text="Kaki Lima"/>-->
+                <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="4"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp">-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/nasi"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="12dp"-->
+                <!--android:text="Aneka Nasi"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/mie"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="12dp"-->
+                <!--android:text="Aneka Mie"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/snack"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:text="Jajanan"-->
+                <!--android:textSize="12dp"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/minuman"-->
+                <!--android:layout_gravity="center"-->
+
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="12dp"-->
+                <!--android:text="Minuman"/>-->
+                <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="4"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp">-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/ayam_goreng"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="12dp"-->
+                <!--android:text="Ayam dan Bebek"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/cafe"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="12dp"-->
+                <!--android:text="Cafe"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/bakso"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:text="Soto, Bakso dan Sop"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/sate"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:text="Sate"/>-->
+                <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="4"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp">-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/roti"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="12dp"-->
+                <!--android:text="Roti"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/pizza"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="12dp"-->
+                <!--android:text="Piza"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/martabak"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:text="Martabak"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/lain"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/image_border"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:text="Lainnya"/>-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/radius2"
+            android:id="@+id/layout1"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yuk Dipilih Kulinernya Dijamin Jatuh Hati"
+
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ffff"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </FrameLayout>
+</ScrollView>

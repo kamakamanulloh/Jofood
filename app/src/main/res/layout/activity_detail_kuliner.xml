@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailKulinerActivity">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#efecec">
+
+            <ImageView
+                android:id="@+id/detail_photo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/template" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="150dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:padding="20dp" >
+
+                    <TextView
+                        android:id="@+id/detail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="Nama Kuliner"
+                        android:textAllCaps="true"
+                        android:textColor="#696969"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/detail_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/detail_title"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Kuliner Enak"
+                        android:textColor="#696969"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_deskripsi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/detail_subtitle"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="blablabla"
+                        android:textColor="#696969"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="20dp" >
+
+                    <ImageView
+                        android:id="@+id/icon_jarak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/ic_directions_car"/>
+
+                    <TextView
+                        android:id="@+id/detail_jarak_tempuh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/icon_jarak"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#696969"/>
+
+                    <ImageView
+                        android:id="@+id/icon_wktu"
+                        android:layout_below="@id/icon_jarak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/ic_directions" />
+
+                    <TextView
+                        android:id="@+id/detail_wktu_prjlnan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon_jarak"
+                        android:layout_toRightOf="@id/icon_wktu"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#696969"/>
+
+                    <ImageView
+                        android:id="@+id/icon_tlpn"
+                        android:layout_below="@id/icon_wktu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/ic_local_phone" />
+
+                    <TextView
+                        android:id="@+id/detail_tlpn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon_wktu"
+                        android:layout_toRightOf="@id/icon_tlpn"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#696969"/>
+
+                    <ImageView
+                        android:id="@+id/icon_web"
+                        android:layout_below="@id/icon_tlpn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_web_asset" />
+
+                    <TextView
+                        android:id="@+id/detail_web"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon_tlpn"
+                        android:layout_toRightOf="@id/icon_web"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#696969"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    xmlns:map="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:padding="20dp" >
+
+                    <!--<fragment-->
+                        <!--android:id="@+id/map"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+                        <!--class="com.google.android.gms.maps.SupportMapFragment" />-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
